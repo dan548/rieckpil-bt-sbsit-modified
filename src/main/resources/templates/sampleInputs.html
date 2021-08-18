@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Spring Boot Thymeleaf Selenium Test Application</title>
+</head>
+<body>
+
+<form th:action="@{/result}" th:object="${sampleInputs}" method="post">
+
+  <div>
+    <label>Date:</label>
+    <input class="form__date" type="text" th:field="*{dateField}" placeholder="yyyy-MM-dd" />
+  </div>
+  <div>
+    <label>Integer:</label>
+    <input class="form__int" type="number" th:field="*{numberField}" placeholder="integer" />
+  </div>
+  <div>
+    <label>Double:</label>
+    <input class="form__double" type="text" th:field="*{doubleField}" placeholder="double" />
+  </div>
+  <div>
+    <label>String:</label>
+    <input class="form__string" type="text" th:field="*{textField}" placeholder="string" />
+  </div>
+  <div>
+    <label>Color:</label>
+    <input class="form__color" type="color" th:field="*{colorField}" placeholder="color" />
+  </div>
+  <div>
+    <label>Date time:</label>
+    <input class="form__date-time" type="datetime-local" th:field="*{dateTimeField}" placeholder="date" />
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

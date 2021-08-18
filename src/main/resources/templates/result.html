@@ -1,0 +1,10 @@
+<h2>Result</h2>
+<div>
+  <p><strong>Date:</strong> <span id="date" th:text="${sampleInputs.dateField}"></span></p>
+  <p><strong>Number:</strong> <span id="number" th:text="${sampleInputs.numberField}"></span></p>
+  <p><strong>Double:</strong> <span id="double" th:text="${sampleInputs.doubleField}"></span></p>
+  <p><strong>Color:</strong> <span id="color" th:text="${sampleInputs.colorField}"></span></p>
+  <p><strong>String:</strong> <span id="text" th:text="${sampleInputs.textField}"></span></p>
+  <p><strong>Date and Time:</strong> <span id="date-time" th:text="${sampleInputs.dateTimeField}"></span></p>
+</div>
+<a th:href="@{/sampleInputs}">Fill the form again</a>
